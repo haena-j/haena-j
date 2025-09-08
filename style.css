@@ -1,0 +1,250 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    color: #9bf6ff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ffffff22;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #a0c4ff;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #fdffb6;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(45deg, #16222a, #3a6073);
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    min-height: 56px; /* To prevent layout shift during typing */
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    color: #bdbdbd;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #a0c4ff;
+    color: #1a1a2e;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #9bf6ff;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #ffffff22;
+    margin-top: 2rem;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 3rem 0;
+    border-bottom: 1px solid #ffffff22;
+}
+
+.content-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #a0c4ff;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.skill-item {
+    background: #2c2c54;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background: #40407a;
+}
+
+.skill-item i {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+    color: #9bf6ff;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #25254b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
+    color: #fdffb6;
+}
+
+.project-card p {
+    padding: 0 1.5rem 1rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+.project-links {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: #a0c4ff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #a0c4ff;
+    margin-right: 0.5rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #a0c4ff;
+    color: #1a1a2e;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: #a0c4ff;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #9bf6ff;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+        min-height: 40px;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+}
